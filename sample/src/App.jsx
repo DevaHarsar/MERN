@@ -1,4 +1,7 @@
+import Navbar from "./components/Navbar";
+
 const App = () => {
+
   return (
     <>
       {/* <h1 className="bg-slate-500">
@@ -6,8 +9,9 @@ const App = () => {
           hi
         </h1> */}
 
-      <div className="h-[100vh] w-[100%] bg-yellow-300 flex flex-col justify-center items-center">
-        <div className="h-[35rem] w-[38%] bg-white flex flex-col justify-center items-center rounded-md border-solid border-2 border-slate-900">
+        <Navbar appname={"Hello"}/>
+      <div className="h-screen  w-screen bg-yellow-300 flex flex-col justify-center items-center">
+        <div className="h-[80%] w-[38%] bg-white flex flex-col justify-center items-center rounded-md border-solid border-2 border-slate-900">
           <h1 className="flex justify-center items-center font-serif font-black h-[7rem] text-2xl">  LOGIN</h1>
           <form action="" className="flex flex-col justify-center items-center gap-4 text-gray-50">
             <input type="text" name="" id="" placeholder="Enter name" className=" bg-zinc-500 outline-none  border-solid border-2 border-slate-900 bottom-2 h-[4rem] w-96  rounded-md font-bold  " />
