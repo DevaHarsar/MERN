@@ -1,39 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-       <div className="h-[100vh] w-[100%] flex justify-center items-center bg-#f5f5f5">
-        <div className="h-5/6 w-[50%] flex flex-col justify-center items-center bg-slate-300 rounded-md shadow-2xl">
-        <h1 className='flex  justify-center items-center font-bold'>FORMS</h1>
-          <form className="w-[80%] h-[60%] flex flex-col justify-center items-center gap-4">
-            <input type="text" name="" id="" placeholder="Name" className="p-3 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
-            <input type="text" name="" id="" placeholder="email" className="p-3 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
-            <input type="number" name="" id="" placeholder="phone" className="p-3 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
-            <input type="password" name="" id="" placeholder="password" className="p-3 bg-[#f8f8f8] w-full font-bold outline-none active:outline-none focus:border-b-2 hover:border-purple-500" />
-            <button type="submit" className="w-full bg-purple-600 text-white p-3">  Register</button>
+      {/* <h1 className="bg-slate-500">
+          hello
+          hi
+        </h1> */}
+
+      <div className="h-[100vh] w-[100%] bg-yellow-300 flex flex-col justify-center items-center">
+        <div className="h-[35rem] w-[38%] bg-white flex flex-col justify-center items-center rounded-md border-solid border-2 border-slate-900">
+          <h1 className="flex justify-center items-center font-serif font-black h-[7rem] text-2xl">  LOGIN</h1>
+          <form action="" className="flex flex-col justify-center items-center gap-4 text-gray-50">
+            <input type="text" name="" id="" placeholder="Enter name" className=" bg-zinc-500 outline-none  border-solid border-2 border-slate-900 bottom-2 h-[4rem] w-96  rounded-md font-bold  " />
+            <input type="number" name="" id="" placeholder="Enter Phone" className="bg-zinc-500 h-[4rem] w-96  border-solid border-2 border-slate-900 rounded-md font-bold" />
+            <input type="email" name="" id="" placeholder="Enter Email" className=" bg-zinc-500 outline-none h-[4rem] w-96 border-solid border-2 border-slate-900  rounded-md  font-bold" />
+            <input type="password" name="" id="" placeholder="Enter Password" className=" bg-zinc-500 outline-none h-[4rem] w-96  border-solid border-2 border-slate-900 rounded-md  font-bold" />
+
+            <button className="bg-green-800 h-14 w-36 rounded-full">Register</button>
           </form>
+
         </div>
-      </div> 
-        {/* <div className='h-[100vh] w-[100%] flex items-center justify-center bg-#f5f5f5'>
-          <div className=' flex justify-center items-center bg-purple-400 h-[70%] w-[70%] gap-3'> 
-            <form action="" className='flex flex-col justify-center items-center h-[50%] w-[50%] gap-3'>
-              <input type="text" id='' name='' placeholder='Enter name' className='outline-none bg-white flex justify-center items-center' />
-              <input type="text" id='' name='' placeholder='Enter age' className='outline-none bg-white flex justify-center items-center' />
-              <input type="text" id='' name='' placeholder='Enter name' className='outline-none bg-white flex justify-center items-center' />
-              <input type="text" id='' name='' placeholder='Enter name' className='outline-none bg-white flex justify-center items-center' />
-            </form>
-          </div>
-                 
-        </div> */}
-    
+
+      </div>
     </>
   )
 }
-
-export default App
+export default App;
