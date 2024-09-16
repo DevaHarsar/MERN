@@ -1,15 +1,11 @@
 import Navbar from "./components/Navbar";
 
 const App = () => {
-
+  const arr=["Login","Signup","Home","contact"]
   return (
     <>
-      {/* <h1 className="bg-slate-500">
-          hello
-          hi
-        </h1> */}
 
-        <Navbar appname={"Hello"}/>
+        <Navbar appname={arr}/>
       <div className="h-screen  w-screen bg-yellow-300 flex flex-col justify-center items-center">
         <div className="h-[80%] w-[38%] bg-white flex flex-col justify-center items-center rounded-md border-solid border-2 border-slate-900">
           <h1 className="flex justify-center items-center font-serif font-black h-[7rem] text-2xl">  LOGIN</h1>
