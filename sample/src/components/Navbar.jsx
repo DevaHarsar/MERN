@@ -2,7 +2,7 @@ import { CircleUser } from 'lucide-react';
 import Homepage from '../pages/Homepage';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useRef, useState } from 'react';
 
 const Navbar = () => {
@@ -17,25 +17,25 @@ const Navbar = () => {
     return (
         <>
 
-            <div className=" h-14 px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-10 shadow-md city-80 text-black text-2xl opacity-70 shadow-2xl font-semibold ">
+            <div className=" h-1[100%] w-screen px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-10  city-80 text-black text-2xl opacity-70 shadow-2xl font-semibold ">
                 <div className="flex">
-                    <Link to='/'>
+                    <NavLink to='/'>
                     <a href="#" className="font-serif justify-items-center active:bg-slate-50">DEVA HARSAR</a>
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className=" h-8  flex   gap-5">
                     <ul className='flex flex-row gap-5'>
 
-                        <Link to={'/about'}>
+                        <NavLink to={'/about'}>
                             <li href="#" id="About" className="hover:bg-green-700 active:bg-black">About</li>
-                        </Link>
+                        </NavLink>
 
-                        <Link to={'/projects'}>
+                        <NavLink to={'/projects'}>
                             <li href="#" className="hover:bg-green-700">Project</li>
-                        </Link>
-                        <Link to={'/contact'}>
+                        </NavLink>
+                        <NavLink to={'/contact'}>
                             <li className="hover:bg-green-700">Contact</li>
-                        </Link>
+                        </NavLink>
                         <button onClick={() => setVisible(!visible)} href="#" className="hover:bg-green-700 border-solid border-2 border-cyan-900"><CircleUser size={32} /></button>
 
                     </ul>
