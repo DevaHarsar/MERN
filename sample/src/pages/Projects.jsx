@@ -55,10 +55,10 @@ const Projects = () => {
   return (
     <>
     
-      <div className=" h-10 mt-5 flex flex-row flex-wrap justify-center items-center gap-4">
+      <div className=" h-full w-full mt-5 grid grid-col flex-wrap justify-center items-center gap-4 ">
         {projectdata.map((project, index) => (
           <div key={index}>
-            <div className="flex w-[24rem] h-full flex-col justify-center items-center bg-slate-400 bg-opacity-25 rounded-xl ">
+            <div className="flex w-full h-full flex-col justify-center items-center bg-slate-300  border-solid border-2  border-gray-950 bg-opacity-25 rounded-xl">
 
               <div className='flex justify-center items-center font-extrabold mt-2'>
                 <h1>{project.title}</h1>
@@ -66,13 +66,13 @@ const Projects = () => {
               <div className='h-20 w-20 flex mt-2'>
                 <img  src={project.coverimg} alt="Java " />
               </div>
-              <div className='flex items-center justify-center font-medium mt-2'>
+              <div className='flex items-center justify-center  font-medium mt-2'>
                 <h4>{project.desc}</h4>
 
               </div>
               <div className='flex justify-center mt-3 size-32'>
                 <a href={project.link}>
-                  <button className="bg-blue-400 bg-opacity-20 rounded-md hover:animate-pulse font-medium" type="button">Click Here</button>
+                  <button className="bg-blue-400 bg-opacity-20 rounded-md hover:animate-pulse font-medium size-20" type="button">Click Here</button>
                 </a>
               </div>
             </div>

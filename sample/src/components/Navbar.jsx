@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
 
-            <div className=" h-[50%] w-screen px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-40 text-black text-2xl  shadow-2xl  font-semibold ">
+            <div className=" h-[50%] w-[100%] px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-40 text-black text-2xl  shadow-2xl  font-semibold ">
                 <div  className="flex">
                     <NavLink to='/'>
                     <h1 className="font-serif justify-items-center  text-black">DEVA HARSAR</h1>

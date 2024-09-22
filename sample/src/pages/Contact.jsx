@@ -1,25 +1,31 @@
-import { useState } from "react";
-import Navbar from "../components/Navbar"
-import java from "../assets/img/background.jpeg"
+import React from "react";
 
 const Contact = () => {
-    const [visible, setVisible] = useState(false);
     return (
-        <>
-            <div className=" w-[100vw] h-[93vh] flex flex-row  items-center justify-around bg bg-slate-100 ">
-                <div className="flex flex-col h-[96%] w-[50%]  justify-center items-center">
-                    <h1 className="text-5xl font-extrabold text-pink-400">ABOUT ME</h1>
-                    <h1 className="text-2xl font-serif text-pretty text-justify  ml-3 mr-3 leading-loose">Hello! I'm DEVA HARSAR, a dedicated software developer with expertise in <span className="bg-red-200 italic">Java, MySQL, PHP, MongoDB, Flutter, and C </span> I excel
-                        in building dynamic web applications, developing mobile apps, and creating robust backend systems. My passion for technology drives me to stay current with industry trends and continuously enhance my skills.
-                        Whether designing user interfaces or crafting complex database schemas, I aim for excellence and efficiency in all my projects.</h1>
+        <div className="flex justify-center items-center h-screen w-full">
+            <form className="bg-white p-10 rounded-3xl shadow-lg w-[40rem] broder-solid border-2 border-gray-900">
+                <div className="text-3xl font-bold text-royalblue mb-4 text-center">
+                    Contact us
                 </div>
+                <input
+                    type="text"
+                    placeholder="Your email"
+                    className="w-full border-solid border-2  p-4 pl-10 text-xl font-serif  text-gray-700 border-slate-800"
+                />
+                <textarea
+                    placeholder="Your message"
+                    className="mt-3 w-full p-4 pl-10 text-xl font-serif border-solid border-2 text-gray-700 h-40 border-slate-800"
+                />
+                <a href="mailto:devaharsar2004@gmail.com">
+                    <button
+                        className="bg-blue-300 mt-3 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full w-full border-solid border-2 border-slate-800"
+                    >
+                        Submit
+                    </button>
+                </a>
+            </form>
+        </div>
+    );
+};
 
-                <div className="h-[100%] w-[50%] flex justify-center items-center">
-                    <img className="  bg-transparent" src={java} alt="Java img" />
-                </div>
-            </div>
-
-        </>
-    )
-}
-export default Contact
+export default Contact;
