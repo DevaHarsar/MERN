@@ -17,26 +17,26 @@ const Navbar = () => {
     return (
         <>
 
-            <div className=" h-1[100%] w-screen px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-10  city-80 text-black text-2xl opacity-70 shadow-2xl font-semibold ">
-                <div className="flex">
+            <div className=" h-[50%] w-screen px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-40 text-black text-2xl  shadow-2xl  font-semibold ">
+                <div  className="flex">
                     <NavLink to='/'>
-                    <a href="#" className="font-serif justify-items-center active:bg-slate-50">DEVA HARSAR</a>
-                    </NavLink>
+                    <h1 className="font-serif justify-items-center  text-black">DEVA HARSAR</h1>
+                    </NavLink>  
                 </div>
                 <div className=" h-8  flex   gap-5">
                     <ul className='flex flex-row gap-5'>
 
                         <NavLink to={'/about'}>
-                            <li href="#" id="About" className="hover:bg-green-700 active:bg-black">About</li>
+                            <li href="#" id="About" className="hover:bg-gray-600 hover:text-slate-50 ">About</li>
                         </NavLink>
 
                         <NavLink to={'/projects'}>
-                            <li href="#" className="hover:bg-green-700">Project</li>
+                            <li href="#" className="hover:bg-gray-600 hover:text-slate-50">Project</li>
                         </NavLink>
                         <NavLink to={'/contact'}>
-                            <li className="hover:bg-green-700">Contact</li>
+                            <li className="hover:bg-gray-600 hover:text-slate-50">Contact</li>
                         </NavLink>
-                        <button onClick={() => setVisible(!visible)} href="#" className="hover:bg-green-700 border-solid border-2 border-cyan-900"><CircleUser size={32} /></button>
+                        <button onClick={() => setVisible(!visible)} href="#" className="hover:hover:bg-gray-900 hover:text-slate-50 border-solid border-2 border-cyan-900"><CircleUser size={32} /></button>
 
                     </ul>
                 </div>

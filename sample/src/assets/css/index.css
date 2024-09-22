@@ -3,4 +3,10 @@
 @tailwind utilities; 
 
 
- 
+ .active{
+   
+    color:rgb(185, 112, 112);
+    
+    
+ }
+
