@@ -45,7 +45,7 @@ const Navbar = () => {
             {
                 visible && (
                     <>
-                        <div className='h-[100%] w-[100%] flex justify-center items-center absolute'>
+                        {/* <div className='h-[100%] w-[100%] flex justify-center items-center absolute'>
                             <div className="h-[100%]  w-[100%] bg-yellow-200 opacity-100 flex  justify-center items-center bg-opacity-55">
                                 <div className="h-[80%] w-[38%] bg-white flex flex-col justify-center items-center rounded-md border-solid border-2 border-slate-900">
                                     <h1 className="flex justify-center items-center font-serif font-black h-[7rem] text-2xl">  LOGIN</h1>
@@ -61,7 +61,8 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}  
+                        
                     </>
                 )
             }
