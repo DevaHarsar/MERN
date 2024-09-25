@@ -17,24 +17,24 @@ const Navbar = () => {
     return (
         <>
 
-            <div className=" h-[50%] w-[100%] px-4 py-2 flex justify-between  gap-5 bg-slate-400 bg-opacity-40 text-black text-2xl  shadow-2xl  font-semibold ">
-                <div  className="flex">
+            <div className="h-[80%]  w-full py-1  flex justify-between   bg-slate-400 bg-opacity-20 text-black text-2xl  shadow-4xl  ">
+                <div  className="flex md:h-10 md:w-fit ">
                     <NavLink to='/'>
-                    <h1 className="font-serif justify-items-center  text-black">DEVA HARSAR</h1>
+                    <h1 className="font-serif font-semibold decoration-0 text-black">DEVA HARSAR</h1>
                     </NavLink>  
                 </div>
-                <div className=" h-8  flex   gap-5">
-                    <ul className='flex flex-row gap-5'>
+                <div className="flex justify-between ">
+                    <ul className='flex flex-row justify-center  md:space-x-5 '>
 
                         <NavLink to={'/about'}>
-                            <li href="#" id="About" className="hover:bg-gray-600 hover:text-slate-50 ">About</li>
+                            <li href="#" id="About" className="hover:bg-gray-600  hover:text-white hover:ease-in text-sm md:text-3xl ">About</li>
                         </NavLink>
 
                         <NavLink to={'/projects'}>
-                            <li href="#" className="hover:bg-gray-600 hover:text-slate-50">Project</li>
+                            <li href="#" className="hover:bg-gray-600 hover:text-slate-50 hover:ease-in   text-sm md:text-3xl ">Project</li>
                         </NavLink>
                         <NavLink to={'/contact'}>
-                            <li className="hover:bg-gray-600 hover:text-slate-50">Contact</li>
+                            <li className="hover:bg-gray-600 hover:text-slate-50   text-sm  hover:ease-in md:text-3xl">Contact</li>
                         </NavLink>
                         <button onClick={() => setVisible(!visible)} href="#" className="hover:hover:bg-gray-900 hover:text-slate-50 border-solid border-2 border-cyan-900"><CircleUser size={32} /></button>
 
@@ -61,7 +61,9 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                        </div> */}  
+                        </div> */}   
+
+                        
                         
                     </>
                 )

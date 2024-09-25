@@ -8,8 +8,8 @@ const Homepage = () => {
     return (
 
         <>
-            <div className="h-[93vh] w-[100vw] flex justify-around items-center bg-gradient-to-l from-fuchsia-50 to-cyan-50 bg-opacity-70">
-                <div className="h-[70vh] w-[80%] flex flex-row  justify-around place-items-center  bg-white shadow-2xl rounded-2xl ">
+            <div className="h-[94vh] w-full flex justify-center items-center bg-gradient-to-l from-fuchsia-50 to-cyan-50 bg-opacity-70">
+                <div className="h-[60vh] w-[80%] flex flex-row  justify-center items-center  bg-white shadow-2xl rounded-2xl ">
 
                     <div className=" w-[90vh] flex flex-col">
                         <h1 className="text-5xl text-yellow-800 animate-pulse font-extrabold font-sans">Hello I am Deva Harsar </h1>
@@ -33,5 +33,6 @@ const Homepage = () => {
         </>
     )
 
-}
-export default Homepage
+}  
+export default Homepage   
+
